@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="{{ '/../static/css/style.css' | relative_url }}" />
   </head>
   <body class="body">
     <header class="top-banner">
       <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="about-me.html">About Me</a>
-        <a href="education.html">Education</a>
-        <a href="biotech-002">Project Biotech 002</a>
-        <a href="biotech-003">Project Biotech 003</a>
-        <a href="resume">Resume</a>
-        <a href="contact-me">Contact Me</a>
+        <a href="{{ '/index.html' | relative_url }}">Home</a>
+        <a href="{{ 'about-me.html' | relative_url }}">About Me</a>
+        <a href="{{ '/education.html' | relative_url }}">Education</a>
+        <a href="{{ '/biotech-002.html' | relative_url }}">Project Biotech 002</a>
+        <a href="{{ '/biotech-003.html' | relative_url }}">Project Biotech 003</a>
+        <a href="{{ '/resume.html' | relative_url }}">Resume</a>
+        <a href="{{ '/contact-me.html' | relative_url }}">Contact Me</a>
       </nav>
     </header>
 
