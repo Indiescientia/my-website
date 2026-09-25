@@ -24,7 +24,7 @@
 }
 .sub-banner {
   background-color: #3368a0;
-  min-height: 75px;
+  min-height: 50px;
   justify-content: center;
   position: relative;
   z-index: 5;
@@ -32,17 +32,17 @@
 }
 
 .image-box {
- width: 100;
- 
- display: flex;
- 
- justify-content: left;
+  width: 100;
 
- gap: 70px;
+  display: flex;
 
- margin-top: 200px;
+  justify-content: left;
 
-border: 2px solid lightgray;
+  gap: 70px;
+
+  margin-top: 200px;
+
+  border: 2px solid lightgray;
 }
 
 .body {
@@ -52,38 +52,33 @@ border: 2px solid lightgray;
   min-height: 100vh;
 }
 
-
-.site-footer{
+.site-footer {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: auto;
   background-color: #66a3bf;
-
 }
 
-.image-box img, .image-box p{
+.image-box img,
+.image-box p {
   height: auto;
   animation: fadeIn 5s ease-out both;
 }
 
 .image-box p {
-  
   animation-delay: 1.8s;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.image-box img
-{
+.image-box img {
   margin-left: 350px;
-  margin-right: 500px;
+  margin-right: 200px;
 }
 
 .sub-banner p {
-  font-size: 20px;
+  font-size: 15px;
 }
-
-
 
 .nav-menu {
   display: flex;
@@ -95,21 +90,19 @@ border: 2px solid lightgray;
 .nav-menu a {
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 12px;
 }
 
-.footer-border
-{
+.footer-border {
   border-top: 1px solid gray;
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
-.footer-border p 
-{
-  color:white;
-
+.footer-border p {
+  color: white;
+  font-size: 12px;
 }
 
 @keyframes slideDown {
