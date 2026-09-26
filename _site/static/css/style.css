@@ -2,51 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 2px solid red !important;
 }
 
-.top-banner,
-.sub-banner {
-  width: 100%;
-  padding: 20px;
+.sub-banner{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3368a0;
+  min-height: 50px;
+  position: relative;
+  z-index: 5;
+  animation: slideDown 1.8s ease-out both;
   color: white;
+
 }
 
-.top-banner {
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: #66a3bf;
   min-height: 50px;
+  gap: 70px;
   justify-content: flex-start;
   position: relative;
   z-index: 10;
 }
-.sub-banner {
-  background-color: #3368a0;
-  min-height: 50px;
-  justify-content: center;
-  position: relative;
-  z-index: 5;
-  animation: slideDown 1.8s ease-out both;
+
+.page-container{
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
+
 .image-box {
-  width: 100;
-
   display: flex;
-
-  justify-content: left;
-
-  gap: 70px;
-
-  margin-top: 200px;
-
-  border: 2px solid lightgray;
+  align-items: center;
+  color: black;
+  
 }
 
 .body {
   display: flex;
+  margin: 0;
   flex-direction: column;
   background-color: #f2efe7;
   min-height: 100vh;
@@ -65,29 +68,29 @@
 }
 
 .image-box p {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
   animation-delay: 1.8s;
   line-height: 1.5;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex: column;
+  justify-content: center;
 }
 
 .image-box img {
-  margin-left: 350px;
-  margin-right: 200px;
+width: 50%;
+display: block;
 }
 
 .sub-banner p {
   font-size: 15px;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 70px;
-  padding-left: 200px;
-  margin-left: 50px;
-}
 
-.nav-menu a {
+.nav-bar a {
   color: white;
   text-decoration: none;
   font-size: 12px;
@@ -98,6 +101,7 @@
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 .footer-border p {
@@ -117,6 +121,11 @@
   }
 }
 
+.scroll-fade{
+  opacity: 0;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -124,4 +133,20 @@
   100% {
     opacity: 1;
   }
+}
+
+
+
+
+@media (max-width:768px)
+{
+  .image-box{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}
+
+.image, .image-box p {
+width: 100%;
 }

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ '/static/css/style.css' | relative_url }}" />
   </head>
   <body class="body">
-    <header class="top-banner">
-      <nav class="nav-menu">
+    <header>
+      <nav class="nav-bar">
         <a href="{{ '/index.html' | relative_url }}">Home</a>
         <a href="{{ 'about-me.html' | relative_url }}">About Me</a>
         <a href="{{ '/education.html' | relative_url }}">Education</a>
@@ -19,7 +19,7 @@
       </nav>
     </header>
 
-    <main>{{content}}</main>
+    <main class = "page container">{{content}}</main>
     <footer class="site-footer">
       <div class="footer-border">
         <p>&copy; 2026 Butil this. All right reserved</p>
