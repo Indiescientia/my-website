@@ -63,7 +63,7 @@
 .image-box img,
 .image-box p {
   height: auto;
-  animation: fadeIn 5s ease-out both;
+  animation: fadeIn 7s ease-out both;
 }
 
 .image-box p {

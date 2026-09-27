@@ -9,17 +9,17 @@
   <body class="body">
     <header>
       <nav class="nav-bar">
-        <a href="{{ '/index.html' | relative_url }}">Home</a>
-        <a href="{{ 'about-me.html' | relative_url }}">About Me</a>
-        <a href="{{ '/education.html' | relative_url }}">Education</a>
-        <a href="{{ '/biotech-002.html' | relative_url }}">Project Biotech 002</a>
-        <a href="{{ '/biotech-003.html' | relative_url }}">Project Biotech 003</a>
-        <a href="{{ '/resume.html' | relative_url }}">Resume</a>
-        <a href="{{ '/contact-me.html' | relative_url }}">Contact Me</a>
+        <a href="{% link index.html %}">Home</a>
+        <a href="{% link about-me.html %}">About Me</a>
+        <a href="{% link education.html %}">Education</a>
+        <a href="{% link biotech-002.html %}">Project Biotech 002</a>
+        <a href="{% link biotech-003.html %}">Project Biotech 003</a>
+        <a href="{% link resume.html %}">Resume</a>
+        <a href="{% link contact-me.html %}">Contact Me</a>
       </nav>
     </header>
 
-    <main class = "page container">{{content}}</main>
+    <main class = >{{content}}</main>
     <footer class="site-footer">
       <div class="footer-border">
         <p>&copy; 2026 Butil this. All right reserved</p>
