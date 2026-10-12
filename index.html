@@ -7,11 +7,52 @@ title: Home page
   <div class="sub-banner">
     <p>Welcome to my website</p>
   </div>
-  
   <div class="image-box">
-    <img src="my-photo.jpg" alt="image belongs here" />
-    <div class  = "box-text">
-      <p>Hello World! This is a first my first jekyll website</p>
+   {% include profile-card.html %}
+
+    <div class="slide-show-card">
+      <div class="slide-show-container">
+        <button class="slide-arrow left-arrow" id="leftBtn">&#10094;</button>
+
+        <div class="slide-show-track" id="slideTrack">
+          <img
+            src="{{ '/static/images/book-mage.jpg' | relative_url }}"
+            alt=""
+            class="slide-image"
+            id="slide-0"
+          />
+          <img
+            src="{{ '/static/images/computer-science.jpg' | relative_url }}"
+            alt=""
+            class="slide-image"
+            id="slide-1"
+          />
+          <img
+            src="{{ '/static/images/moon-image-3.jpg' | relative_url }}"
+            alt=""
+            class="slide-image"
+            id="slide-2"
+          />
+        </div>
+
+        <button class="slide-arrow right-arrow" id="rightBtn">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="small-card-column">
+      <div class="small-card-1 clickable-card" data-slide="0">
+        <p>Studying Various Subjects</p>
+      </div>
+
+      <div class="small-card-2 clickable-card" data-slide="1">
+        <p>Computer Science</p>
+      </div>
+
+      <div class="small-card-3 clickable-card" data-slide="2">
+        <p>Nature</p>
+      </div>
     </div>
   </div>
+
+  <script src="{{ '/static/js/slideshow.js' | relative_url }}"></script>
 </section>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{ '/static/css/style.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="{{ '/static/css/style.css' | relative_url }}"
+    />
   </head>
   <body class="body">
     <header>
@@ -12,17 +15,21 @@
         <a href="{{ site.baseurl }}{% link index.html %}">Home</a>
         <a href="{{ site.baseurl }}{% link about-me.html %}">About Me</a>
         <a href="{{ site.baseurl }}{% link education.html %}">Education</a>
-        <a href="{{ site.baseurl }}{% link biotech-002.html %}">Project Biotech 002</a>
-        <a href="{{ site.baseurl }}{% link biotech-003.html %}">Project Biotech 003</a>
+        <a href="{{ site.baseurl }}{% link biotech-002.html %}"
+          >Project Biotech 002</a
+        >
+        <a href="{{ site.baseurl }}{% link biotech-003.html %}"
+          >Project Biotech 003</a
+        >
         <a href="{{ site.baseurl }}{% link resume.html %}">Resume</a>
         <a href="{{ site.baseurl }}{% link contact-me.html %}">Contact Me</a>
       </nav>
     </header>
 
-    <main class = >{{content}}</main>
+    <main class="">{{content}}</main>
     <footer class="site-footer">
       <div class="footer-border">
-        <p>&copy; 2026 Butil this. All right reserved</p>
+        <p>&copy; 2026 I Built this. All rights reserved</p>
       </div>
     </footer>
   </body>

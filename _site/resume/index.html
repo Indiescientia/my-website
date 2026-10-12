@@ -4,30 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" href="/my-website/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/static/css/style.css"
+    />
   </head>
   <body class="body">
     <header>
       <nav class="nav-bar">
-        <a href="/my-website/my-website/">Home</a>
-        <a href="/my-website/my-website/about-me/">About Me</a>
-        <a href="/my-website/my-website/education/">Education</a>
-        <a href="/my-website/my-website/biotech-002/">Project Biotech 002</a>
-        <a href="/my-website/my-website/biotech-003/">Project Biotech 003</a>
-        <a href="/my-website/my-website/resume/">Resume</a>
-        <a href="/my-website/my-website/contact-me/">Contact Me</a>
+        <a href="/">Home</a>
+        <a href="/about-me/">About Me</a>
+        <a href="/education/">Education</a>
+        <a href="/biotech-002/"
+          >Project Biotech 002</a
+        >
+        <a href="/biotech-003/"
+          >Project Biotech 003</a
+        >
+        <a href="/resume/">Resume</a>
+        <a href="/contact-me/">Contact Me</a>
       </nav>
     </header>
 
-    <main class = ><section>
-  <h2>resume</h2>
-  <p>Hello! I am a developer building my first Jekyll website.</p>
-</section>
+    <main class=""><section class="resume-section">
+  <div class="image-box">
+      <div class="profile-card">
+      <img
+        src="/static/images/avatar-person-icon.jpg"
+        alt="image belongs here"
+        class="profile-image"
+      />
+      <p>Hello World!</p>
+    </div>
+    <div class="resume-card">
+      <h2>Resume</h2>
+      <div class="education-column">
+        <br />
+         <p>
+        <strong>Eucation</strong> <br><br>
+          University of California, Berkeley, Berkeley, CA &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; <strong>May 2026</strong></strong> <br>
+          
+          Bachelors of Arts in Physics <br><br>
+          
+          West Los Angeles College, Culver City, CA &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &ensp; &thinsp;<strong>Dec 2022</strong> <br>
+          AS in Physics || AA in Math, Computer Science and Sciences <br><br>
+          </p>
+          <p>
+          <strong>Highlighted Experience and Projects</strong><br><br>
+           Research Assistant, Earth and Planetary Department , UC Berkeley, Berkeley, CA &emsp; &emsp; &emsp; <strong>October 2024 - July 2025</strong> <br><br>
+Backend Development (Quart, PostgreSQL, psycopg2) <br><br>
+            <u>
+              <li>Built a concurrent RESTful API using Quart and PostgreSQL to collect automated, real-time California 
+earthquake logs and historical seismic datasets. </li>
+                <li>
+                  Constructed dynamic data-retrieval endpoints using psycopg2 to execute database queries based on custom 
+search parameters passed from the client. 
+                </li>
+                <li>
+                  Engineered a live data-streaming pipeline that automatically pushes new seismic event alerts to the frontend 
+the moment they are logged into the database.
+                </li> 
+            </u><br><br>
+           <p>Frontend Development (UI & Interactive Mapping) </p> 
+            <u>
+              <li>
+              Developed an interactive geographic map that dynamically plots targeted earthquake events by connecting to 
+the backend search endpoints.   
+              </li>
+              <li>
+                Integrated real-time event listeners that automatically update the map interface, dropping new 
+magnitude-scaled markers onto the map live without requiring a page refresh. 
+              </li>
+            </u>
 
+        </p>
+      </div>
+      <div class="school-crest-column"></div>
+         <div class = uc-berkeley-crest-card >
+         </div>
+
+      <div class="school-crest-column"></div>
+    </div>
+  </div>
+</section>
 </main>
     <footer class="site-footer">
       <div class="footer-border">
-        <p>&copy; 2026 Butil this. All right reserved</p>
+        <p>&copy; 2026 I Built this. All rights reserved</p>
       </div>
     </footer>
   </body>

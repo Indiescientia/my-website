@@ -2,8 +2,58 @@
 layout: default
 title: Resume
 ---
-<section>
-  <h2>resume</h2>
-  <p>Hello! I am a developer building my first Jekyll website.</p>
-</section>
 
+<section class="resume-section">
+  <div class="image-box">
+    {% include profile-card.html %}
+    <div class="resume-card">
+      <h2>Resume</h2>
+      <div class="education-column">
+        <br />
+         <p>
+        <strong>Eucation</strong> <br><br>
+          University of California, Berkeley, Berkeley, CA &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; <strong>May 2026</strong></strong> <br>
+          
+          Bachelors of Arts in Physics <br><br>
+          
+          West Los Angeles College, Culver City, CA &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &ensp; &thinsp;<strong>Dec 2022</strong> <br>
+          AS in Physics || AA in Math, Computer Science and Sciences <br><br>
+          </p>
+          <p>
+          <strong>Highlighted Experience and Projects</strong><br><br>
+           Research Assistant, Earth and Planetary Department , UC Berkeley, Berkeley, CA &emsp; &emsp; &emsp; <strong>October 2024 - July 2025</strong> <br><br>
+Backend Development (Quart, PostgreSQL, psycopg2) <br><br>
+            <u>
+              <li>Built a concurrent RESTful API using Quart and PostgreSQL to collect automated, real-time California 
+earthquake logs and historical seismic datasets. </li>
+                <li>
+                  Constructed dynamic data-retrieval endpoints using psycopg2 to execute database queries based on custom 
+search parameters passed from the client. 
+                </li>
+                <li>
+                  Engineered a live data-streaming pipeline that automatically pushes new seismic event alerts to the frontend 
+the moment they are logged into the database.
+                </li> 
+            </u><br><br>
+           <p>Frontend Development (UI & Interactive Mapping) </p> 
+            <u>
+              <li>
+              Developed an interactive geographic map that dynamically plots targeted earthquake events by connecting to 
+the backend search endpoints.   
+              </li>
+              <li>
+                Integrated real-time event listeners that automatically update the map interface, dropping new 
+magnitude-scaled markers onto the map live without requiring a page refresh. 
+              </li>
+            </u>
+
+        </p>
+      </div>
+      <div class="school-crest-column"></div>
+         <div class = uc-berkeley-crest-card >
+         </div>
+
+      <div class="school-crest-column"></div>
+    </div>
+  </div>
+</section>

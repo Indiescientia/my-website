@@ -5,6 +5,29 @@
   /* outline: solid red !important; */
 }
 
+u,
+li {
+  text-decoration: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
 .sub-banner {
   display: flex;
   flex-direction: column;
@@ -30,6 +53,8 @@
   justify-content: flex-start;
   position: relative;
   z-index: 10;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 
 .page-container {
@@ -42,8 +67,170 @@
 .image-box {
   display: flex;
   align-items: center;
+  gap: 100px;
   color: black;
   padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 4px solid #66a3bf;
+}
+
+.profile-card {
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 24px;
+
+  border-top: 5px solid #aeac78;
+}
+
+.profile-card p {
+  padding: 10px 6px 10px;
+  box-sizing: border-box;
+  animation-delay: 1.8s;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-show-card {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 600px;
+  height: 400px;
+
+  background-color: white;
+  border-radius: 24px;
+
+  border-top: 5px solid #aeac78;
+}
+
+.slide-show-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.slide-show-track::-webkit-scrollbar {
+  display: none;
+}
+
+.small-card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.small-card-column p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.slide-image {
+  flex-shrink: 0;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 24px;
+  scroll-snap-align: center;
+}
+
+.small-card-1 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 24px;
+  border-top: 5px solid #aeac78;
+}
+
+.small-card-2 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 24px;
+  border-top: 5px solid #aeac78;
+}
+
+.small-card-3 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 24px;
+  border-top: 5px solid #aeac78;
+}
+
+.slide-show-container {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.slide-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.active-card {
+  transform: translateY(-4px);
+
+  box-shadow: 0px 12px 30px rgba(141, 169, 134, 0.6) !important;
+
+  border: 2px solid #8da986 !important;
+}
+
+.about-me-card h2 {
+  text-align: center;
+}
+
+.resume-card h2 {
+  text-align: center;
 }
 
 .body {
@@ -61,31 +248,19 @@
 }
 
 .image-box img,
-.image-box p {
-  height: auto;
+.image-box p , .image-box h2, .image-box u{
   animation: fadeIn 7s ease-out both;
 }
 
-.image-box p {
-  width: 50%;
-  padding: 40px;
-  box-sizing: border-box;
-  animation-delay: 1.8s;
-  line-height: 1.5;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex: column;
-  justify-content: center;
-}
-
 .image-box img {
-  width: 50%;
   display: block;
 }
 
 .sub-banner p {
   font-size: 17px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
 .nav-bar a {
@@ -93,6 +268,8 @@
   color: white;
   text-decoration: none;
   font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700; /* Makes the navbar links bold */
 }
 
 .footer-border {
@@ -106,6 +283,20 @@
   color: white;
   font-size: 12px;
 }
+
+.school-crest-colu{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.uc-berkeley-crest-card{
+  width: 300;
+  height: 300;
+}
+
+
+
 
 @keyframes slideDown {
   0% {
@@ -135,11 +326,23 @@
 @media (max-width: 768px) {
   .image-box {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
   }
-}
+  .small-card-column {
+    width: 100%;
+    align-items: center;
+  }
+  .small-card-1,
+  .small-card-2,
+  .small-card-3 {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
 
-.image,
-.image-box p {
-  width: 100%;
+  .slide-show-card {
+    width: 100%;
+  }
 }

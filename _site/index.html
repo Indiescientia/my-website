@@ -4,37 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-    <link rel="stylesheet" href="/my-website/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/static/css/style.css"
+    />
   </head>
   <body class="body">
     <header>
       <nav class="nav-bar">
-        <a href="/my-website/my-website/">Home</a>
-        <a href="/my-website/my-website/about-me/">About Me</a>
-        <a href="/my-website/my-website/education/">Education</a>
-        <a href="/my-website/my-website/biotech-002/">Project Biotech 002</a>
-        <a href="/my-website/my-website/biotech-003/">Project Biotech 003</a>
-        <a href="/my-website/my-website/resume/">Resume</a>
-        <a href="/my-website/my-website/contact-me/">Contact Me</a>
+        <a href="/">Home</a>
+        <a href="/about-me/">About Me</a>
+        <a href="/education/">Education</a>
+        <a href="/biotech-002/"
+          >Project Biotech 002</a
+        >
+        <a href="/biotech-003/"
+          >Project Biotech 003</a
+        >
+        <a href="/resume/">Resume</a>
+        <a href="/contact-me/">Contact Me</a>
       </nav>
     </header>
 
-    <main class = ><section>
+    <main class=""><section>
   <div class="sub-banner">
     <p>Welcome to my website</p>
   </div>
-  
   <div class="image-box">
-    <img src="my-photo.jpg" alt="image belongs here" />
-    <div class  = "box-text">
-      <p>Hello World! This is a first my first jekyll website</p>
+     <div class="profile-card">
+      <img
+        src="/static/images/avatar-person-icon.jpg"
+        alt="image belongs here"
+        class="profile-image"
+      />
+      <p>Hello World!</p>
+    </div>
+
+    <div class="slide-show-card">
+      <div class="slide-show-container">
+        <button class="slide-arrow left-arrow" id="leftBtn">&#10094;</button>
+
+        <div class="slide-show-track" id="slideTrack">
+          <img
+            src="/static/images/book-mage.jpg"
+            alt=""
+            class="slide-image"
+            id="slide-0"
+          />
+          <img
+            src="/static/images/computer-science.jpg"
+            alt=""
+            class="slide-image"
+            id="slide-1"
+          />
+          <img
+            src="/static/images/moon-image-3.jpg"
+            alt=""
+            class="slide-image"
+            id="slide-2"
+          />
+        </div>
+
+        <button class="slide-arrow right-arrow" id="rightBtn">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="small-card-column">
+      <div class="small-card-1 clickable-card" data-slide="0">
+        <p>Studying Various Subjects</p>
+      </div>
+
+      <div class="small-card-2 clickable-card" data-slide="1">
+        <p>Computer Science</p>
+      </div>
+
+      <div class="small-card-3 clickable-card" data-slide="2">
+        <p>Nature</p>
+      </div>
     </div>
   </div>
+
+  <script src="/static/js/slideshow.js"></script>
 </section>
 </main>
     <footer class="site-footer">
       <div class="footer-border">
-        <p>&copy; 2026 Butil this. All right reserved</p>
+        <p>&copy; 2026 I Built this. All rights reserved</p>
       </div>
     </footer>
   </body>
